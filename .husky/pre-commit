@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run updateTOC --update-only && git add ./README.md
+npm run lint-staged
